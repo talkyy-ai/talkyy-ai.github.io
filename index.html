@@ -15,16 +15,22 @@
 
     <main>
       <div class="form-container">
-        <!-- Replace the src URL with your actual form embed link -->
         <iframe 
-          src="https://docs.google.com/forms/d/e/1FAIpQLSfD8iU9EgXYdL-YourFormID/viewform?embedded=true" 
+          data-tally-src="https://tally.so/embed/mDoM8l?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" 
+          loading="lazy" 
           width="100%" 
-          height="600" 
+          height="500" 
           frameborder="0" 
           marginheight="0" 
-          marginwidth="0">
-          Loading…
+          marginwidth="0" 
+          title="Tally Form">
         </iframe>
+        <script>
+          var d=document,s=d.createElement("script");
+          s.src="https://tally.so/widgets/embed.js";
+          s.onload=function(){Tally.loadEmbeds();};
+          d.body.appendChild(s);
+        </script>
       </div>
     </main>
   </div>
